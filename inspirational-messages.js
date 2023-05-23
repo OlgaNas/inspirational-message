@@ -1,9 +1,14 @@
 //Random inspirational-messages
-const you = ['have the best laugh', 'light up the room', 'have a great sense of humor', 'like sunshine on a rainy day', ' bring out the best in other people', 'are strong', 'are making a difference'];
-const when = ['Today', 'Soon', 'Tomorrow', 'This year', 'This month'];
-const what = ['everything will be ok', 'happiness will come to you', 'you will meet someone special', 'you will save lots of money', 'good news will come to you', 'you will have good time with your family', 'weather will be good'];
+const youArr = ['have the best laugh', 'light up the room', 'have a great sense of humor', 'like sunshine on a rainy day', ' bring out the best in other people', 'are strong', 'are making a difference'];
+const whenArr = ['Today', 'Soon', 'Tomorrow', 'This year', 'This month'];
+const whatArr = ['everything will be ok', 'happiness will come to you', 'you will meet someone special', 'you will save lots of money', 'good news will come to you', 'you will have good time with your family', 'weather will be good'];
 
 
-function
+function inspirationalMessage() {
+    const you = youArr[Math.random(Math.floor() * youArr.length)];
+    const when = whenArr[Math.random(Math.floor() * whenArr.length)];
+    const what = whatArr[Math.random(Math.floor() * whatArr.length)]
+    return console.log(`You ${you}. ${when} ${what}!`);
+};
 
-    console.log(`You ${youAre}. ${when} ${what}!`);
+inspirationalMessage();
