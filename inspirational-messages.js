@@ -5,10 +5,11 @@ const whatArr = ['everything will be ok', 'happiness will come to you', 'you wil
 
 
 function inspirationalMessage() {
-    const you = youArr[Math.random(Math.floor() * youArr.length)];
-    const when = whenArr[Math.random(Math.floor() * whenArr.length)];
-    const what = whatArr[Math.random(Math.floor() * whatArr.length)]
-    return console.log(`You ${you}. ${when} ${what}!`);
+    const you = youArr[Math.floor(Math.random() * youArr.length)];
+    const when = whenArr[Math.floor(Math.random() * whenArr.length)];
+    const what = whatArr[Math.floor(Math.random() * whatArr.length)];
+    const message = `You ${you}. ${when} ${what}!`;
+    return message;
 };
 
 inspirationalMessage();
