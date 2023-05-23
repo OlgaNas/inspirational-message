@@ -9,7 +9,6 @@ function inspirationalMessage() {
     const when = whenArr[Math.floor(Math.random() * whenArr.length)];
     const what = whatArr[Math.floor(Math.random() * whatArr.length)];
     const message = `You ${you}. ${when} ${what}!`;
-    return message;
+    return document.getElementById("message").innerHTML = message;
 };
 
-inspirationalMessage();
