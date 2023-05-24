@@ -12,3 +12,8 @@ function inspirationalMessage() {
     return document.getElementById("message").innerHTML = message;
 };
 
+const arrColor = ['red', 'blue', 'black', 'pink', 'yellow', 'orange', 'brown', 'aqua', 'green', 'plum'];
+function changeColor() {
+    messageColor = arrColor[Math.floor(Math.random() * arrColor.length)];
+    return document.getElementById('message').style.color = messageColor;
+}
