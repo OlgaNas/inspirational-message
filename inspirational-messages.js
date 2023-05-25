@@ -17,3 +17,9 @@ function changeColor() {
     messageColor = arrColor[Math.floor(Math.random() * arrColor.length)];
     return document.getElementById('message').style.color = messageColor;
 }
+
+let date = new Date();
+const newParag = document.createElement('p');
+newParag.id = 'date';
+newParag.innerHTML = date;
+document.body.appendChild(newParag);
